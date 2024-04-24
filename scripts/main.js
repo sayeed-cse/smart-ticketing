@@ -27,7 +27,11 @@ function busSeat(seat_id) {
         const new_total_price = 550 * total_selected_seat;
         console.log(new_total_price);
         setElementTextValue(total_price, new_total_price);
+
+        const seatsLeft = 40 - total_selected_seat;
+        setElementTextValue('seats-left', seatsLeft);
     }
+    
 
 }
 
